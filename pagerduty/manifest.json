@@ -1,0 +1,35 @@
+{
+  "display_name": "PagerDuty",
+  "maintainer": "abc@a.com",
+  "manifest_version": "1.0.0",
+  "name": "pagerduty",
+  "metric_prefix": "pagerduty.",
+  "metric_to_check": "",
+  "creates_events": false,
+  "short_description": "",
+  "guid": "7d0ea3ae-c6a8-42f4-81a0-4ccc0002fc0a",
+  "support": "contrib",
+  "supported_os": [
+    "linux",
+    "mac_os",
+    "windows"
+  ],
+  "public_title": "PagerDuty",
+  "categories": [
+    ""
+  ],
+  "type": "check",
+  "is_public": false,
+  "integration_id": "pagerduty",
+  "assets": {
+    "configuration": {
+      "spec": "assets/configuration/spec.yaml"
+    },
+    "dashboards": {},
+    "monitors": {},
+    "saved_views": {},
+    "service_checks": "assets/service_checks.json",
+    "logs": {},
+    "metrics_metadata": "metadata.csv"
+  }
+}
