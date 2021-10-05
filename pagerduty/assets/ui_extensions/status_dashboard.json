@@ -1,0 +1,32 @@
+{
+  "secured": true,
+  "main_url": "https://app.pagerduty.com/integration-datadog-ui",
+  "api_version": "v1.0",
+  "features": [
+    {
+      "name": "dashboard_custom_widget",
+      "options": {
+        "widgets": [
+          {
+            "name": "Status Dashboard",
+            "custom_widget_key": "pagerduty-service-dashboard",
+            "id": "pagerduty-service-dashboard",
+            "source": "widget-service-dashboard",
+            "default_size": "lg",
+            "minimum_size": "lg",
+            "options": [
+              {
+                "required": true,
+                "enum": [],
+                "type": "string",
+                "name": "business-service-id",
+                "label": "Business Service"
+              }
+            ],
+            "icon": "https://pd-platform-plugins.s3.us-west-2.amazonaws.com/pd-logo.png"
+          }
+        ]
+      }
+    }
+  ]
+}

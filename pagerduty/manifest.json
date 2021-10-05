@@ -43,9 +43,9 @@
   },
   "oauth": {},
   "assets": {
-    "dashboards": {
-      "PagerDuty Status Dashboard": "assets/dashboards/status_dashboard.json",
-      "Incidents by PagerDuty": "assets/dashboards/incidents_by_pagerduty.json"
+    "ui_extensions": {
+      "PagerDuty Status Dashboard": "assets/ui_extensions/status_dashboard.json",
+      "Incidents by PagerDuty": "assets/ui_extensions/incidents_by_pagerduty.json"
     }
   },
   "pricing": [
