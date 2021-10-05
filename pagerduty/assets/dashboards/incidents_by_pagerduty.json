@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "v2",
+  "display_on_public_website": false,
+  "app_id": null,
+  "support_type": "partner",
+  "tile": {
+    "description": "PagerDuty Event Intelligence",
+    "logo_media": {
+      "light": "https://pd-platform-plugins.s3.us-west-2.amazonaws.com/pd-logo.png"
+    },
+    "title": "PagerDuty Event Intelligence"
+  },
+  "author": {
+    "name": "PagerDuty"
+  },
+  "pricing": [],
+  "legal_terms": {},
+  "proxy_scopes": [],
+  "assets": {
+    "ui_extensions": {
+      "features": [
+        {
+          "name": "dashboard_custom_widget",
+          "options": {
+            "widgets": [
+              {
+                "minimum_size": "md",
+                "name": "PagerDuty Event Intelligence",
+                "default_size": "lg",
+                "custom_widget_key": "incidents_widget",
+                "source": "incidents",
+                "icon": "https://pd-platform-plugins.s3.us-west-2.amazonaws.com/pd-logo.png"
+              }
+            ]
+          }
+        }
+      ],
+      "secured": true,
+      "debug_mode_url": "http://127.0.0.1:3000/datadog-widget/",
+      "controller_source": "main-controller",
+      "api_version": "v1.0",
+      "main_url": "https://app.pagerduty.com/visibility/datadog-widget"
+    }
+  }
+}

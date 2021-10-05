@@ -5,7 +5,9 @@
   "classifier_tags": [
     "Supported OS::Linux",
     "Supported OS::Mac OS",
-    "Supported OS::Windows"
+    "Supported OS::Windows",
+    "Category::Containers",
+    "Category::Security"
   ],
   "display_on_public_website": false,
   "tile": {
@@ -13,32 +15,42 @@
     "configuration": "README.md#Setup",
     "support": "README.md#Support",
     "changelog": "CHANGELOG.md",
-    "description": "",
+    "description": "Provides a lot of value and you will be thrilled with using this App",
     "title": "PagerDuty",
-    "media": []
+    "media": [
+      {
+        "media_type": "image",
+        "caption": "PagerDuty",
+        "image_url": "images/pagerduty.png"
+      },
+      {
+        "media_type": "image",
+        "caption": "PagerDuty Status Dashboard",
+        "image_url": "images/status_dashboard.png"
+      },
+      {
+        "media_type": "image",
+        "caption": "Incidents by PagerDuty",
+        "image_url": "images/incidents_by_pagerduty.png"
+      }
+    ]
   },
   "author": {
-    "support_email": "abc@a.com"
+    "homepage": "https://www.pagerduty.com",
+    "name": "PagerDuty",
+    "sales_email": "sales@pagerduty.com",
+    "support_email": "support@pagerduty.com"
   },
   "oauth": {},
   "assets": {
-    "integration": {
-      "source_type_name": "PagerDuty",
-      "configuration": {
-        "spec": "assets/configuration/spec.yaml"
-      },
-      "events": {
-        "creates_events": false
-      },
-      "metrics": {
-        "prefix": "pagerduty.",
-        "check": "",
-        "metadata_path": "metadata.csv"
-      },
-      "service_checks": {
-        "metadata_path": "assets/service_checks.json"
-      }
-    },
-    "logs": {}
-  }
+    "dashboards": {
+      "PagerDuty Status Dashboard": "assets/dashboards/status_dashboard.json",
+      "Incidents by PagerDuty": "assets/dashboards/incidents_by_pagerduty.json"
+    }
+  },
+  "pricing": [
+    {
+      "billing_type": "free"
+    }
+  ]
 }

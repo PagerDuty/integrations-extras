@@ -2,11 +2,15 @@
 
 ## Overview
 
-This check monitors [PagerDuty][1] through the Datadog Agent.
+TODO - PagerDuty app overview
 
 ## Setup
 
-Follow the instructions below to install and configure this check for an Agent running on a host. For containerized environments, see the [Autodiscovery Integration Templates][2] for guidance on applying these instructions.
+TODO - PagerDuty app setup
+
+## Support 
+
+TODO - PagerDuty app support
 
 ### Installation
 

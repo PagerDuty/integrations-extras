@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "v2",
+  "display_on_public_website": false,
+  "app_id": null,
+  "support_type": "partner",
+  "tile": {
+    "description": "PagerDuty Status Dashboard for business services",
+    "logo_media": {
+      "light": "https://pd-platform-plugins.s3.us-west-2.amazonaws.com/pd-logo.png"
+    },
+    "title": "PagerDuty Status Dashboard"
+  },
+  "author": {
+    "name": "PagerDuty"
+  },
+  "pricing": [],
+  "legal_terms": {},
+  "proxy_scopes": [],
+  "assets": {
+    "ui_extensions": {
+      "secured": true,
+      "main_url": "https://app.pagerduty.com/integration-datadog-ui",
+      "api_version": "v1.0",
+      "features": [
+        {
+          "name": "dashboard_custom_widget",
+          "options": {
+            "widgets": [
+              {
+                "name": "Status Dashboard",
+                "custom_widget_key": "pagerduty-service-dashboard",
+                "id": "pagerduty-service-dashboard",
+                "source": "widget-service-dashboard",
+                "default_size": "lg",
+                "minimum_size": "lg",
+                "options": [
+                  {
+                    "required": true,
+                    "enum": [],
+                    "type": "string",
+                    "name": "business-service-id",
+                    "label": "Business Service"
+                  }
+                ],
+                "icon": "https://pd-platform-plugins.s3.us-west-2.amazonaws.com/pd-logo.png"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
