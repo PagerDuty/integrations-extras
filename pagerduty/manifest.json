@@ -1,35 +1,44 @@
 {
-  "display_name": "PagerDuty",
-  "maintainer": "abc@a.com",
-  "manifest_version": "1.0.0",
-  "name": "pagerduty",
-  "metric_prefix": "pagerduty.",
-  "metric_to_check": "",
-  "creates_events": false,
-  "short_description": "",
-  "guid": "7d0ea3ae-c6a8-42f4-81a0-4ccc0002fc0a",
-  "support": "contrib",
-  "supported_os": [
-    "linux",
-    "mac_os",
-    "windows"
+  "manifest_version": "2.0.0",
+  "app_uuid": "8c818365-90bb-487f-9b0b-2721ff0e554a",
+  "app_id": "pagerduty",
+  "classifier_tags": [
+    "Supported OS::Linux",
+    "Supported OS::Mac OS",
+    "Supported OS::Windows"
   ],
-  "public_title": "PagerDuty",
-  "categories": [
-    ""
-  ],
-  "type": "check",
-  "is_public": false,
-  "integration_id": "pagerduty",
+  "display_on_public_website": false,
+  "tile": {
+    "overview": "README.md#Overview",
+    "configuration": "README.md#Setup",
+    "support": "README.md#Support",
+    "changelog": "CHANGELOG.md",
+    "description": "",
+    "title": "PagerDuty",
+    "media": []
+  },
+  "author": {
+    "support_email": "abc@a.com"
+  },
+  "oauth": {},
   "assets": {
-    "configuration": {
-      "spec": "assets/configuration/spec.yaml"
+    "integration": {
+      "source_type_name": "PagerDuty",
+      "configuration": {
+        "spec": "assets/configuration/spec.yaml"
+      },
+      "events": {
+        "creates_events": false
+      },
+      "metrics": {
+        "prefix": "pagerduty.",
+        "check": "",
+        "metadata_path": "metadata.csv"
+      },
+      "service_checks": {
+        "metadata_path": "assets/service_checks.json"
+      }
     },
-    "dashboards": {},
-    "monitors": {},
-    "saved_views": {},
-    "service_checks": "assets/service_checks.json",
-    "logs": {},
-    "metrics_metadata": "metadata.csv"
+    "logs": {}
   }
 }
